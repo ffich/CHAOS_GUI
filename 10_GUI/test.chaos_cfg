@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "os": {
+    "scheduler_freq": "1000",
+    "tick_ms": "1",
+    "ready_queue": "500",
+    "hooks": {
+      "startup": true,
+      "shutdown": true,
+      "pre_task": true,
+      "post_task": true,
+      "error": true
+    }
+  },
+  "tasks": [
+    {
+      "id": "0",
+      "name": "Led_Task",
+      "priority": "1"
+    },
+    {
+      "id": "1",
+      "name": "Task_1",
+      "priority": "1"
+    },
+    {
+      "id": "2",
+      "name": "Task_2",
+      "priority": "1"
+    },
+    {
+      "id": "3",
+      "name": "Task_3",
+      "priority": "1"
+    },
+    {
+      "id": "4",
+      "name": "Task_4",
+      "priority": "1"
+    },
+    {
+      "id": "5",
+      "name": "Task_5",
+      "priority": "1"
+    }
+  ],
+  "schedule": [
+    {
+      "task_id": 0,
+      "task_name": "Task_0",
+      "period_ms": 10
+    },
+    {
+      "task_id": 1,
+      "task_name": "Task_1",
+      "period_ms": 10
+    },
+    {
+      "task_id": 2,
+      "task_name": "Task_2",
+      "period_ms": 10
+    },
+    {
+      "task_id": 0,
+      "task_name": "Task_0",
+      "period_ms": 10
+    }
+  ],
+  "alarms": [
+    {
+      "alarm_id": 0,
+      "alarm_type": "ONE_SHOT",
+      "alarm_action": "TRIGGER_CALLBACK",
+      "period_ms": 100,
+      "task_id": null,
+      "callback": "MyAlarmCallback_0"
+    },
+    {
+      "alarm_id": 1,
+      "alarm_type": "ONE_SHOT",
+      "alarm_action": "ACTIVATE_TASK",
+      "period_ms": 100,
+      "task_id": 0,
+      "callback": null
+    },
+    {
+      "alarm_id": 2,
+      "alarm_type": "ONE_SHOT",
+      "alarm_action": "TRIGGER_CALLBACK",
+      "period_ms": 100,
+      "task_id": null,
+      "callback": "MyAlarmCallback_2"
+    },
+    {
+      "alarm_id": 3,
+      "alarm_type": "ONE_SHOT",
+      "alarm_action": "ACTIVATE_TASK",
+      "period_ms": 100,
+      "task_id": 0,
+      "callback": null
+    }
+  ]
+}

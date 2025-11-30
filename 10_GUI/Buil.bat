@@ -1,0 +1,1 @@
+pyinstaller --name CHAOS_Cfg --noconsole --onefile main.py

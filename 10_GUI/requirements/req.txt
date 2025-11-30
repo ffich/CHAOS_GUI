@@ -1,0 +1,43 @@
+CHAOS Config Tool Reequirements
+
+A. GUI
+
+- Struttura a wizard
+- Pagine di configurazione per
+--> General OS Cfg
+--> Tasks
+--> Schedule Tables
+--> Alarms
+
+B. Generator
+- Genera due folders
+--> OS Static code
+--> OS cfg code
+
+
+Page: OS Config
+
+General:
+- Scheduler Timer Freq (Hz): numeric
+- Desired OS Tick (ms): numeric
+- Ready Task Queue: numeric
+
+Hooks:
+- Enable Startup Hook: boolean
+- Enable Shutdown Hook: boolean
+- Enable pre-task Hook: boolean
+- Enable post-task Hook: boolean
+- Enable Error Hook: boolean
+
+- Page: Task, Schedule Table, Alarms
+Generazione tabelle necessarie per i vari OS objects
+
+OS Project Options
+- Project Name
+- File Outputs
+
+Modifiche
+- Associare nome del task a ID in schedule table cfg
+- Associare nome del task a ID in alarm cfg
+- rimuovere pulsante prev dalla prima pagina
+
