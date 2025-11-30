@@ -93,3 +93,10 @@ Ideal for:
 - Developers customizing RTOS behavior
 - Students and researchers learning how CHAOS works internally
 - Anyone wanting a structured, error-free workflow for configuring CHAOS
+
+# Usage Example
+
+
+https://github.com/user-attachments/assets/1b88606a-9f9e-4ce9-afb3-806dfc62fae6
+
+
